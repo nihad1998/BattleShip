@@ -11,8 +11,6 @@ import javax.swing.SwingUtilities;
 
 public class Welcome_page_user2 extends JFrame{
 	static JFrame fr2;
-	
-	
 	public static void main(String[] args) {
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
