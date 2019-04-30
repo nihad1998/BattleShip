@@ -2,7 +2,6 @@ package src;
 
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
-
 import com.sun.javafx.event.EventQueue;
 import javax.swing.JPanel;
 import java.awt.BorderLayout;
