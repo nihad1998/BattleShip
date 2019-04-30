@@ -32,7 +32,7 @@ public class BattleTest extends JFrame {
 	static int first_step = 0; //used to send first message via socket
 	static int tmp = 0; static byte[][] array_user1; //used to convert jbutton array to byte array 
 	static int numOfShippedCells = 17 ; // in order to indicate that we have 17 cells which have filled with ships
-	static int hitted = 17 ; // a variable that show number of cells which are hitten
+	static int hitted = 0 ; // a variable that show number of cells which are hitten
 	
 	public BattleTest(int rival) {
 		this.rival = rival;
@@ -191,7 +191,7 @@ public class BattleTest extends JFrame {
 						    				if(array_user1[x][y] != 0) {
 												user2[x][y].setBackground(Color.red); // if hitted 
 												hitted++;
-												 if (hitted == 5) { 
+												 if (hitted == 17) { 
 														int input = JOptionPane.showOptionDialog(null, "You are the winner."
 														+ " Want to exit ?", "GAME OVER", JOptionPane.OK_CANCEL_OPTION, 
 														JOptionPane.INFORMATION_MESSAGE, null, null, null);
@@ -307,7 +307,7 @@ public class BattleTest extends JFrame {
 												if(array_user1[x][y] != 0) {
 													user1[x][y].setBackground(Color.red);
 													hitted++;
-													 if (hitted == 5) { 
+													 if (hitted == 17) { 
 															int input = JOptionPane.showOptionDialog(null, "You are the winner."
 															+ " Want to exit ?", "GAME OVER", JOptionPane.OK_CANCEL_OPTION, 
 															JOptionPane.INFORMATION_MESSAGE, null, null, null);
@@ -555,6 +555,5 @@ public class BattleTest extends JFrame {
 		}
 	}
 	
-//	public void 	
 	
 }
