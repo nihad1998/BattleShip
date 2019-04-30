@@ -1,7 +1,5 @@
 package src;
-
 import javax.swing.SwingUtilities;
-
 public class Battle_main_Bot {
 	public static void main(String[] args)
 	{
